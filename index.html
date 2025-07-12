@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Artilingo Academy Dictionary by Utku Lehrer - Policies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title"></h1>
+        <div class="lang-switch">
+            <button onclick="setLanguage('tr')">🇹🇷 Türkçe</button>
+            <button onclick="setLanguage('en')">🇬🇧 English</button>
+            <button onclick="setLanguage('de')">🇩🇪 Deutsch</button>
+        </div>
+        <div id="content"></div>
+    </div>
+<script>
+let currentLang = 'en';
+function setLanguage(lang) {
+    currentLang = lang;
+    fetch(`lang/${lang}.json`)
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("title").textContent = data.title;
+            document.getElementById("content").innerHTML = data.content;
+        });
+}
+window.onload = () => setLanguage(currentLang);
+</script>
+</body>
+</html>
