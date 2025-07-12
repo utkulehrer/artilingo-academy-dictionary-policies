@@ -1,0 +1,1460 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Legal Terms – Artilingo Academy Dictionary</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+        function switchLang(lang) {
+            document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+            document.getElementById(lang).classList.add('active');
+            localStorage.setItem("lang", lang);
+        }
+        window.onload = () => {
+            const savedLang = localStorage.getItem("lang") || "en";
+            switchLang(savedLang);
+        }
+    </script>
+</head>
+<body>
+    <div class="language-switch">
+        🌐 <button onclick="switchLang('en')">English</button>
+        <button onclick="switchLang('tr')">Türkçe</button>
+        <button onclick="switchLang('de')">Deutsch</button>
+    </div>
+    <div class="container">
+        <section id="en" class="active"><h1>
+ Privacy Policy – Artilingo Academy Dictionary by Utku Lehrer
+</h1>
+<p>
+ <em>
+  (Version 2.0 – 2025)
+ </em>
+ <br/>
+ <strong>
+  Last updated:
+ </strong>
+ July 12, 2025
+</p>
+<h3>
+ 1. What is this document?
+</h3>
+<p>
+ This privacy policy explains how
+ <strong>
+  Artilingo Academy Dictionary
+ </strong>
+ ("the Application") collects, uses, stores, and protects your data. It is intended for users of the desktop software developed and distributed by
+ <strong>
+  Utku Lehrer
+ </strong>
+ .
+</p>
+<h3>
+ 2. What kind of data do we collect?
+</h3>
+<p>
+ The application
+ <strong>
+  does not collect any personal information
+ </strong>
+ . However, for licensing and logging purposes, it processes:
+</p>
+<table>
+ <tr>
+  <th>
+   Data Type
+  </th>
+  <th>
+   Description
+  </th>
+ </tr>
+ <tr>
+  <td>
+   <strong>
+    License Code
+   </strong>
+  </td>
+  <td>
+   Encrypted (SHA-256 hashed) form of the code you enter
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <strong>
+    Role
+   </strong>
+  </td>
+  <td>
+   Defines your access level: Admin, Standard Student, or Pro Student
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <strong>
+    Timestamp
+   </strong>
+  </td>
+  <td>
+   Date and time of activation, login, or update-related events
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <strong>
+    Hash Code
+   </strong>
+  </td>
+  <td>
+   Used to anonymously track license activations or update actions
+  </td>
+ </tr>
+</table>
+<h3>
+ 3. Why is this data used?
+</h3>
+<table>
+ <tr>
+  <th>
+   Purpose
+  </th>
+  <th>
+   Explanation
+  </th>
+ </tr>
+ <tr>
+  <td>
+   <strong>
+    License verification
+   </strong>
+  </td>
+  <td>
+   Ensure that entered codes are valid, not expired, and uniquely assigned
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <strong>
+    Security
+   </strong>
+  </td>
+  <td>
+   Detect multiple usage or license abuse across systems
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <strong>
+    Log generation
+   </strong>
+  </td>
+  <td>
+   Maintain local activation logs on your device (not uploaded elsewhere)
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <strong>
+    Update system
+   </strong>
+  </td>
+  <td>
+   Validate versions before downloading updates from Google Drive
+  </td>
+ </tr>
+</table>
+<h3>
+ 4. Does the app require internet access?
+</h3>
+<p>
+ Only for these two purposes:
+</p>
+<ul>
+ <li>
+  <strong>
+   License activation
+  </strong>
+  (only once, during setup)
+ </li>
+ <li>
+  <strong>
+   Optional update check
+  </strong>
+  from a public Google Drive link
+ </li>
+</ul>
+<p>
+ 📌
+ <strong>
+  No continuous connection, telemetry, or sync with any server is performed.
+ </strong>
+</p>
+<h3>
+ 5. Where is the data stored?
+</h3>
+<p>
+ All data is stored
+ <strong>
+  locally
+ </strong>
+ on your computer in the following structure:
+</p>
+<table>
+ <tr>
+  <th>
+   File/Folder
+  </th>
+  <th>
+   Purpose
+  </th>
+ </tr>
+ <tr>
+  <td>
+   <code>
+    activation_log.json
+   </code>
+  </td>
+  <td>
+   Stores hash of activation codes and timestamps
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <code>
+    data/
+   </code>
+  </td>
+  <td>
+   Stores your dictionary content (themes, words)
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <code>
+    media/
+   </code>
+  </td>
+  <td>
+   Stores images and sound files for vocabulary
+  </td>
+ </tr>
+</table>
+<p>
+ 🔐
+ <strong>
+  No data is uploaded, synchronized, or backed up externally.
+ </strong>
+</p>
+<h3>
+ 6. Does this app access Google services?
+</h3>
+<p>
+ ✅
+ <strong>
+  Yes
+ </strong>
+ , but
+ <strong>
+  only to download publicly accessible update packages
+ </strong>
+ via Google Drive.
+ <br/>
+ It does
+ <strong>
+  not
+ </strong>
+ use Google Sign-In, OAuth login, Google Docs, Gmail, or access your private Google Drive files.
+</p>
+<p>
+ The included
+ <code>
+  credentials.json
+ </code>
+ file only authorizes download from a specific shared Drive folder using predefined API keys.
+ <br/>
+ <strong>
+  No personal Google account data is accessed or required.
+ </strong>
+</p>
+<h3>
+ 7. Who can access the data?
+</h3>
+<table>
+ <tr>
+  <th>
+   Role
+  </th>
+  <th>
+   Access Scope
+  </th>
+ </tr>
+ <tr>
+  <td>
+   <strong>
+    Admin
+   </strong>
+  </td>
+  <td>
+   Can view activation logs and add/edit/delete content
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <strong>
+    Student
+   </strong>
+  </td>
+  <td>
+   Can only view content; has no access to logs or license info
+  </td>
+ </tr>
+</table>
+<h3>
+ 8. What this app does
+ <strong>
+  not
+ </strong>
+ collect:
+</h3>
+<p>
+ ❌ This app does
+ <strong>
+  not
+ </strong>
+ collect, store, or transmit:
+</p>
+<ul>
+ <li>
+  Name or surname
+ </li>
+ <li>
+  Email address
+ </li>
+ <li>
+  IP address
+ </li>
+ <li>
+  Location or device information
+ </li>
+ <li>
+  Webcam, microphone, or biometric data
+ </li>
+ <li>
+  Any sensitive or personally identifiable information (PII)
+ </li>
+</ul>
+<h3>
+ 9. Does it use cookies or web trackers?
+</h3>
+<p>
+ ❌
+ <strong>
+  No.
+ </strong>
+ This is a
+ <strong>
+  desktop-based offline application
+ </strong>
+ . It does
+ <strong>
+  not
+ </strong>
+ use:
+</p>
+<ul>
+ <li>
+  Cookies
+ </li>
+ <li>
+  Session IDs
+ </li>
+ <li>
+  Web analytics
+ </li>
+ <li>
+  Tracking pixels
+ </li>
+ <li>
+  Advertisements
+ </li>
+</ul>
+<h3>
+ 10. Can I delete my data?
+</h3>
+<p>
+ Yes. You have full control.
+ <br/>
+ Simply delete or reset the following files:
+</p>
+<ul>
+ <li>
+  <code>
+   activation_log.json
+  </code>
+  (for license history)
+ </li>
+ <li>
+  <code>
+   data/
+  </code>
+  (for themes and vocabulary)
+ </li>
+ <li>
+  <code>
+   media/
+  </code>
+  (for pictures and audio)
+ </li>
+</ul>
+<p>
+ There is no backup anywhere else. Once deleted, your data is gone.
+</p>
+<h3>
+ 11. Is this app GDPR-compliant?
+</h3>
+<p>
+ ✅
+ <strong>
+  Yes.
+ </strong>
+ <br/>
+ Because the app does not collect or process personally identifiable data, and all logs are stored locally in hashed (anonymous) format, it complies with GDPR and similar global privacy standards.
+</p>
+<h3>
+ 12. Contact
+</h3>
+<p>
+ <strong>
+  Utku Lehrer
+ </strong>
+ <br/>
+ 📧 Email:
+ <a href="mailto:utkulehrer@gmail.com">
+  utkulehrer@gmail.com
+ </a>
+ <br/>
+ 🌐 GitHub:
+ <a href="https://github.com/utkulehrer" target="_blank">
+  github.com/utkulehrer
+ </a>
+</p>
+<h3>
+ ✅ Summary
+</h3>
+<ul>
+ <li>
+  🔐 No sensitive personal data collected
+ </li>
+ <li>
+  🖥️ Fully offline operation (except updates)
+ </li>
+ <li>
+  📄 Local logs, not cloud-stored
+ </li>
+ <li>
+  🚫 No third-party access, no ads, no cookies
+ </li>
+ <li>
+  🛠️ Google Drive access is
+  <strong>
+   read-only
+  </strong>
+  and limited to shared update packages
+ </li>
+</ul>
+<hr><br>
+<h1>Terms of Service – Artilingo Academy Dictionary by Utku Lehrer</h1>
+<p><em>(Version 1.0 – 2025)</em><br><strong>Last updated:</strong> July 12, 2025</p>
+
+<h3>1. Acceptance of Terms</h3>
+<p>By using the Artilingo Academy Dictionary application ("the App"), you agree to comply with and be bound by these terms of service. If you do not agree to these terms, please do not use the App.</p>
+
+<h3>2. License and Access</h3>
+<ul>
+<li>The App is licensed, not sold. All rights remain with the author.</li>
+<li>A valid license code is required to access either student or admin features.</li>
+<li>You may not redistribute, resell, or reverse engineer the App.</li>
+</ul>
+
+<h3>3. Offline Use</h3>
+<p>The App is designed to work fully offline. No internet connection is required after license activation, except for optional updates.</p>
+
+<h3>4. Content and Data</h3>
+<ul>
+<li>All vocabulary data, themes, images, and sound files remain local and are not transmitted externally.</li>
+<li>The admin user may add, edit, or remove content within the App.</li>
+<li>No personal data (e.g. names, emails) is collected or shared.</li>
+</ul>
+
+<h3>5. Updates</h3>
+<p>Update packages may be provided periodically via secure Google Drive links. Updates are optional and require manual or QR-triggered installation.</p>
+
+<h3>6. Limitation of Liability</h3>
+<p>The App is provided "as is" without warranties of any kind. The author is not responsible for data loss, license misuse, or other issues arising from use.</p>
+
+<h3>7. Changes to Terms</h3>
+<p>These terms may be updated from time to time. Continued use of the App implies acceptance of any revised terms.</p>
+
+<h3>8. Contact</h3>
+<p>For questions or support:<br>
+📧 <a href="mailto:utkulehrer@gmail.com">utkulehrer@gmail.com</a><br>
+🌐 <a href="https://github.com/utkulehrer" target="_blank">github.com/utkulehrer</a></p>
+</section>
+        <section id="tr"><h1>
+ Gizlilik Politikası – Artilingo Academy Dictionary by Utku Lehrer
+</h1>
+<p>
+ <em>
+  (Sürüm 2.0 – 2025)
+ </em>
+ <br/>
+ <strong>
+  Son güncelleme:
+ </strong>
+ July 12, 2025
+</p>
+<h3>
+ 1. Bu belge nedir?
+</h3>
+<p>
+ Bu gizlilik politikası,
+ <strong>
+  Artilingo Academy Dictionary
+ </strong>
+ ("the Application") verilerinizi nasıl topladığını, kullandığını, sakladığını ve koruduğunu açıklar. Bu belge, masaüstü uygulamasını kullananlar içindir. Geliştirici:
+ <strong>
+  Utku Lehrer
+ </strong>
+ .
+</p>
+<h3>
+ 2. Hangi tür verileri topluyoruz?
+</h3>
+<p>
+ The application
+ <strong>
+  does not collect any personal information
+ </strong>
+ . Ancak lisanslama ve kayıt tutma amaçları için şu veriler işlenir:
+</p>
+<table>
+ <tr>
+  <th>
+   Veri Türü
+  </th>
+  <th>
+   Açıklama
+  </th>
+ </tr>
+ <tr>
+  <td>
+   <strong>
+    License Code
+   </strong>
+  </td>
+  <td>
+   Girdiğiniz kodun şifrelenmiş (SHA-256) hali
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <strong>
+    Role
+   </strong>
+  </td>
+  <td>
+   Erişim düzeyinizi belirler: Yönetici, Standart Öğrenci veya Pro Öğrenci
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <strong>
+    Timestamp
+   </strong>
+  </td>
+  <td>
+   Etkinleştirme, giriş veya güncelleme işlemlerinin tarih ve saati
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <strong>
+    Hash Code
+   </strong>
+  </td>
+  <td>
+   Lisans etkinleştirmelerini veya güncellemeleri anonim olarak izlemek için kullanılır
+  </td>
+ </tr>
+</table>
+<h3>
+ 3. Bu veriler neden kullanılıyor?
+</h3>
+<table>
+ <tr>
+  <th>
+   Amaç
+  </th>
+  <th>
+   Açıklama
+  </th>
+ </tr>
+ <tr>
+  <td>
+   <strong>
+    License verification
+   </strong>
+  </td>
+  <td>
+   Girilen kodların geçerli, süresi dolmamış ve benzersiz olduğunu doğrulamak için
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <strong>
+    Security
+   </strong>
+  </td>
+  <td>
+   Bir lisansın birden fazla cihazda kötüye kullanımını tespit etmek için
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <strong>
+    Log generation
+   </strong>
+  </td>
+  <td>
+   Cihazınızda yerel etkinleştirme kayıtlarını tutmak için (dışarı aktarılmaz)
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <strong>
+    Update system
+   </strong>
+  </td>
+  <td>
+   Google Drive'dan güncelleme indirmeden önce sürüm kontrolü yapmak için
+  </td>
+ </tr>
+</table>
+<h3>
+ 4. Uygulamanın internet erişimine ihtiyacı var mı?
+</h3>
+<p>
+ Sadece şu iki amaç için:
+</p>
+<ul>
+ <li>
+  <strong>
+   Lisans etkinleştirme
+  </strong>
+  (only once, during setup)
+ </li>
+ <li>
+  <strong>
+   İsteğe bağlı güncelleme kontrolü
+  </strong>
+  from a public Google Drive link
+ </li>
+</ul>
+<p>
+ 📌
+ <strong>
+  Herhangi bir sunucuya sürekli bağlantı, telemetri veya senkronizasyon yapılmaz.
+ </strong>
+</p>
+<h3>
+ 5. Veriler nerede saklanır?
+</h3>
+<p>
+ All data is stored
+ <strong>
+  locally
+ </strong>
+ on your computer in the following structure:
+</p>
+<table>
+ <tr>
+  <th>
+   Dosya/Klasör
+  </th>
+  <th>
+   Amaç
+  </th>
+ </tr>
+ <tr>
+  <td>
+   <code>
+    activation_log.json
+   </code>
+  </td>
+  <td>
+   Etkinleştirme kodlarının ve zaman damgalarının hash’lenmiş halini saklar
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <code>
+    data/
+   </code>
+  </td>
+  <td>
+   Sözlük içeriğinizi saklar (temalar, kelimeler)
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <code>
+    media/
+   </code>
+  </td>
+  <td>
+   Kelimelere ait görsel ve ses dosyalarını saklar
+  </td>
+ </tr>
+</table>
+<p>
+ 🔐
+ <strong>
+  Hiçbir veri dışarıya aktarılmaz, senkronize edilmez veya yedeklenmez.
+ </strong>
+</p>
+<h3>
+ 6. Bu uygulama Google servislerine erişiyor mu?
+</h3>
+<p>
+ ✅
+ <strong>
+  Yes
+ </strong>
+ , but
+ <strong>
+  sadece herkese açık güncelleme paketlerini indirmek için
+ </strong>
+ via Google Drive.
+ <br/>
+ It does
+ <strong>
+  not
+ </strong>
+ use Google Sign-In, OAuth login, Google Docs, Gmail, or access your private Google Drive files.
+</p>
+<p>
+ The included
+ <code>
+  credentials.json
+ </code>
+ file only authorizes download from a specific shared Drive folder using predefined API keys.
+ <br/>
+ <strong>
+  Herhangi bir kişisel Google hesabı verisine erişilmez veya gerek duyulmaz.
+ </strong>
+</p>
+<h3>
+ 7. Verilere kimler erişebilir?
+</h3>
+<table>
+ <tr>
+  <th>
+   Role
+  </th>
+  <th>
+   Erişim Düzeyi
+  </th>
+ </tr>
+ <tr>
+  <td>
+   <strong>
+    Admin
+   </strong>
+  </td>
+  <td>
+   Etkinleştirme kayıtlarını görüntüleyebilir ve içerik ekleyip düzenleyebilir
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <strong>
+    Student
+   </strong>
+  </td>
+  <td>
+   Sadece içerikleri görüntüleyebilir; lisans ya da kayıt bilgilerine erişemez
+  </td>
+ </tr>
+</table>
+<h3>
+ 8. What this app does
+ <strong>
+  not
+ </strong>
+ collect:
+</h3>
+<p>
+ ❌ This app does
+ <strong>
+  not
+ </strong>
+ collect, store, or transmit:
+</p>
+<ul>
+ <li>
+  Name or surname
+ </li>
+ <li>
+  Email address
+ </li>
+ <li>
+  IP address
+ </li>
+ <li>
+  Location or device information
+ </li>
+ <li>
+  Webcam, microphone, or biometric data
+ </li>
+ <li>
+  Any sensitive or personally identifiable information (PII)
+ </li>
+</ul>
+<h3>
+ 9. Çerez veya izleyici kullanıyor mu?
+</h3>
+<p>
+ ❌
+ <strong>
+  No.
+ </strong>
+ This is a
+ <strong>
+  masaüstü ve çevrimdışı çalışan bir uygulamadır
+ </strong>
+ . It does
+ <strong>
+  not
+ </strong>
+ use:
+</p>
+<ul>
+ <li>
+  Cookies
+ </li>
+ <li>
+  Session IDs
+ </li>
+ <li>
+  Web analytics
+ </li>
+ <li>
+  Tracking pixels
+ </li>
+ <li>
+  Advertisements
+ </li>
+</ul>
+<h3>
+ 10. Verilerimi silebilir miyim?
+</h3>
+<p>
+ Yes. Tüm kontrol sizdedir.
+ <br/>
+ Sadece aşağıdaki dosyaları silmeniz yeterlidir:
+</p>
+<ul>
+ <li>
+  <code>
+   activation_log.json
+  </code>
+  (for license history)
+ </li>
+ <li>
+  <code>
+   data/
+  </code>
+  (for themes and vocabulary)
+ </li>
+ <li>
+  <code>
+   media/
+  </code>
+  (for pictures and audio)
+ </li>
+</ul>
+<p>
+ There is no backup anywhere else. Once deleted, your data is gone.
+</p>
+<h3>
+ 11. Bu uygulama GDPR ile uyumlu mu?
+</h3>
+<p>
+ ✅
+ <strong>
+  Yes.
+ </strong>
+ <br/>
+ Uygulama kişisel tanımlanabilir veri toplamadığı için, and all logs are stored locally in hashed (anonymous) format, it complies with GDPR and similar global privacy standards.
+</p>
+<h3>
+ 12. İletişim
+</h3>
+<p>
+ <strong>
+  Utku Lehrer
+ </strong>
+ <br/>
+ 📧 Email:
+ <a href="mailto:utkulehrer@gmail.com">
+  utkulehrer@gmail.com
+ </a>
+ <br/>
+ 🌐 GitHub:
+ <a href="https://github.com/utkulehrer" target="_blank">
+  github.com/utkulehrer
+ </a>
+</p>
+<h3>
+ ✅ Özet
+</h3>
+<ul>
+ <li>
+  🔐 Hassas kişisel veri toplanmaz
+ </li>
+ <li>
+  🖥️ Tamamen çevrimdışı çalışır (güncellemeler hariç)
+ </li>
+ <li>
+  📄 Kayıtlar yereldir, bulutta saklanmaz
+ </li>
+ <li>
+  🚫 Üçüncü taraf erişimi, reklam veya çerez yoktur
+ </li>
+ <li>
+  🛠️ Google Drive access is
+  <strong>
+   read-only
+  </strong>
+  and limited to shared update packages
+ </li>
+</ul>
+<hr><br>
+<h1>Kullanım Şartları – Artilingo Academy Dictionary by Utku Lehrer</h1>
+<p><em>(Sürüm 1.0 – 2025)</em><br><strong>Son güncelleme:</strong> 12 Temmuz 2025</p>
+
+<h3>1. Şartların Kabulü</h3>
+<p>Artilingo Academy Dictionary uygulamasını ("Uygulama") kullanarak bu kullanım şartlarını kabul etmiş olursunuz. Bu şartları kabul etmiyorsanız lütfen Uygulamayı kullanmayınız.</p>
+
+<h3>2. Lisans ve Erişim</h3>
+<ul>
+<li>Uygulama satılmamakta, lisanslanmaktadır. Tüm haklar yazara aittir.</li>
+<li>Öğrenci veya yönetici işlevlerine erişmek için geçerli bir lisans kodu gereklidir.</li>
+<li>Uygulama yeniden dağıtılamaz, satılamaz veya ters mühendislik yapılamaz.</li>
+</ul>
+
+<h3>3. Çevrimdışı Kullanım</h3>
+<p>Uygulama tamamen çevrimdışı çalışacak şekilde tasarlanmıştır. Lisans etkinleştirmesinden sonra internet bağlantısına gerek yoktur (isteğe bağlı güncellemeler hariç).</p>
+
+<h3>4. İçerik ve Veri</h3>
+<ul>
+<li>Tüm kelime verileri, temalar, görseller ve ses dosyaları yerel olarak kalır, dışarı aktarılmaz.</li>
+<li>Yönetici kullanıcı uygulama içeriğini ekleyebilir, düzenleyebilir veya silebilir.</li>
+<li>Hiçbir kişisel veri (örn. ad, e-posta) toplanmaz veya paylaşılmaz.</li>
+</ul>
+
+<h3>5. Güncellemeler</h3>
+<p>Güncellemeler zaman zaman güvenli Google Drive bağlantıları aracılığıyla sunulabilir. Güncellemeler isteğe bağlıdır ve manuel veya QR kod ile yüklenebilir.</p>
+
+<h3>6. Sorumluluğun Sınırlandırılması</h3>
+<p>Uygulama “olduğu gibi” sunulmaktadır ve herhangi bir garanti verilmemektedir. Yazar, veri kaybı, lisans kötüye kullanımı veya diğer sorunlardan sorumlu tutulamaz.</p>
+
+<h3>7. Şartlarda Değişiklik</h3>
+<p>Bu şartlar zamanla güncellenebilir. Uygulamayı kullanmaya devam etmeniz, yeni şartları kabul ettiğiniz anlamına gelir.</p>
+
+<h3>8. İletişim</h3>
+<p>Soru veya destek için:<br>
+📧 <a href="mailto:utkulehrer@gmail.com">utkulehrer@gmail.com</a><br>
+🌐 <a href="https://github.com/utkulehrer" target="_blank">github.com/utkulehrer</a></p>
+</section>
+        <section id="de"><h1>
+ Datenschutzerklärung – Artilingo Academy Dictionary von Utku Lehrer
+</h1>
+<p>
+ <em>
+  (Version 2.0 – 2025)
+ </em>
+ <br/>
+ <strong>
+  Zuletzt aktualisiert:
+ </strong>
+ July 12, 2025
+</p>
+<h3>
+ 1. Was ist dieses Dokument?
+</h3>
+<p>
+ Diese Datenschutzerklärung erklärt, wie
+ <strong>
+  Artilingo Academy Dictionary
+ </strong>
+ ("the Application") Ihre Daten gesammelt, verwendet, gespeichert und geschützt werden. Sie richtet sich an Benutzer der Desktop-Software, entwickelt und bereitgestellt von
+ <strong>
+  Utku Lehrer
+ </strong>
+ .
+</p>
+<h3>
+ 2. Welche Daten erfassen wir?
+</h3>
+<p>
+ The application
+ <strong>
+  does not collect any personal information
+ </strong>
+ . Für Lizenzierungs- und Protokollierungszwecke werden jedoch folgende Daten verarbeitet:
+</p>
+<table>
+ <tr>
+  <th>
+   Datentyp
+  </th>
+  <th>
+   Beschreibung
+  </th>
+ </tr>
+ <tr>
+  <td>
+   <strong>
+    License Code
+   </strong>
+  </td>
+  <td>
+   Verschlüsselte (SHA-256-Hash) Version des eingegebenen Codes
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <strong>
+    Role
+   </strong>
+  </td>
+  <td>
+   Definiert Ihr Zugriffslevel: Admin, Standard-Schüler oder Pro-Schüler
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <strong>
+    Timestamp
+   </strong>
+  </td>
+  <td>
+   Datum und Uhrzeit von Aktivierungen, Logins oder Updates
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <strong>
+    Hash Code
+   </strong>
+  </td>
+  <td>
+   Dient zur anonymen Nachverfolgung von Lizenzaktivierungen oder Updates
+  </td>
+ </tr>
+</table>
+<h3>
+ 3. Warum werden diese Daten verwendet?
+</h3>
+<table>
+ <tr>
+  <th>
+   Zweck
+  </th>
+  <th>
+   Erläuterung
+  </th>
+ </tr>
+ <tr>
+  <td>
+   <strong>
+    License verification
+   </strong>
+  </td>
+  <td>
+   Sicherstellen, dass eingegebene Codes gültig, nicht abgelaufen und eindeutig zugewiesen sind
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <strong>
+    Security
+   </strong>
+  </td>
+  <td>
+   Erkennung mehrfacher Nutzung oder Lizenzmissbrauch auf mehreren Systemen
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <strong>
+    Log generation
+   </strong>
+  </td>
+  <td>
+   Lokale Aktivierungsprotokolle auf Ihrem Gerät speichern (nicht hochgeladen)
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <strong>
+    Update system
+   </strong>
+  </td>
+  <td>
+   Versionen vor dem Herunterladen von Updates über Google Drive validieren
+  </td>
+ </tr>
+</table>
+<h3>
+ 4. Benötigt die App eine Internetverbindung?
+</h3>
+<p>
+ Nur für diese zwei Zwecke:
+</p>
+<ul>
+ <li>
+  <strong>
+   Lizenzaktivierung
+  </strong>
+  (only once, during setup)
+ </li>
+ <li>
+  <strong>
+   Optionale Update-Prüfung
+  </strong>
+  from a public Google Drive link
+ </li>
+</ul>
+<p>
+ 📌
+ <strong>
+  Es erfolgt keine dauerhafte Verbindung, Telemetrie oder Synchronisation mit einem Server.
+ </strong>
+</p>
+<h3>
+ 5. Wo werden die Daten gespeichert?
+</h3>
+<p>
+ All data is stored
+ <strong>
+  locally
+ </strong>
+ on your computer in the following structure:
+</p>
+<table>
+ <tr>
+  <th>
+   Datei/Ordner
+  </th>
+  <th>
+   Zweck
+  </th>
+ </tr>
+ <tr>
+  <td>
+   <code>
+    activation_log.json
+   </code>
+  </td>
+  <td>
+   Speichert den Hash von Aktivierungscodes und Zeitstempeln
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <code>
+    data/
+   </code>
+  </td>
+  <td>
+   Speichert Ihre Wörterbuchinhalte (Themen, Wörter)
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <code>
+    media/
+   </code>
+  </td>
+  <td>
+   Speichert Bilder und Audiodateien für Vokabeln
+  </td>
+ </tr>
+</table>
+<p>
+ 🔐
+ <strong>
+  Es werden keine Daten hochgeladen, synchronisiert oder extern gesichert.
+ </strong>
+</p>
+<h3>
+ 6. Greift diese App auf Google-Dienste zu?
+</h3>
+<p>
+ ✅
+ <strong>
+  Yes
+ </strong>
+ , but
+ <strong>
+  nur um öffentlich zugängliche Update-Pakete herunterzuladen
+ </strong>
+ via Google Drive.
+ <br/>
+ It does
+ <strong>
+  not
+ </strong>
+ use Google Sign-In, OAuth login, Google Docs, Gmail, or access your private Google Drive files.
+</p>
+<p>
+ The included
+ <code>
+  credentials.json
+ </code>
+ file only authorizes download from a specific shared Drive folder using predefined API keys.
+ <br/>
+ <strong>
+  Es werden keine persönlichen Google-Kontodaten abgerufen oder benötigt.
+ </strong>
+</p>
+<h3>
+ 7. Wer hat Zugriff auf die Daten?
+</h3>
+<table>
+ <tr>
+  <th>
+   Role
+  </th>
+  <th>
+   Zugriffsbereich
+  </th>
+ </tr>
+ <tr>
+  <td>
+   <strong>
+    Admin
+   </strong>
+  </td>
+  <td>
+   Kann Aktivierungsprotokolle anzeigen sowie Inhalte hinzufügen/bearbeiten/löschen
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <strong>
+    Student
+   </strong>
+  </td>
+  <td>
+   Kann Inhalte nur anzeigen; kein Zugriff auf Protokolle oder Lizenzinformationen
+  </td>
+ </tr>
+</table>
+<h3>
+ 8. What this app does
+ <strong>
+  not
+ </strong>
+ collect:
+</h3>
+<p>
+ ❌ This app does
+ <strong>
+  not
+ </strong>
+ collect, store, or transmit:
+</p>
+<ul>
+ <li>
+  Name or surname
+ </li>
+ <li>
+  Email address
+ </li>
+ <li>
+  IP address
+ </li>
+ <li>
+  Location or device information
+ </li>
+ <li>
+  Webcam, microphone, or biometric data
+ </li>
+ <li>
+  Any sensitive or personally identifiable information (PII)
+ </li>
+</ul>
+<h3>
+ 9. Verwendet sie Cookies oder Web-Tracker?
+</h3>
+<p>
+ ❌
+ <strong>
+  No.
+ </strong>
+ This is a
+ <strong>
+  Desktop-basierte Offline-Anwendung
+ </strong>
+ . It does
+ <strong>
+  not
+ </strong>
+ use:
+</p>
+<ul>
+ <li>
+  Cookies
+ </li>
+ <li>
+  Session IDs
+ </li>
+ <li>
+  Web analytics
+ </li>
+ <li>
+  Tracking pixels
+ </li>
+ <li>
+  Advertisements
+ </li>
+</ul>
+<h3>
+ 10. Kann ich meine Daten löschen?
+</h3>
+<p>
+ Yes. Sie haben die volle Kontrolle.
+ <br/>
+ Löschen oder setzen Sie einfach die folgenden Dateien zurück:
+</p>
+<ul>
+ <li>
+  <code>
+   activation_log.json
+  </code>
+  (for license history)
+ </li>
+ <li>
+  <code>
+   data/
+  </code>
+  (for themes and vocabulary)
+ </li>
+ <li>
+  <code>
+   media/
+  </code>
+  (for pictures and audio)
+ </li>
+</ul>
+<p>
+ There is no backup anywhere else. Once deleted, your data is gone.
+</p>
+<h3>
+ 11. Ist diese App DSGVO-konform?
+</h3>
+<p>
+ ✅
+ <strong>
+  Yes.
+ </strong>
+ <br/>
+ Da die App keine personenbezogenen Daten sammelt oder verarbeitet, and all logs are stored locally in hashed (anonymous) format, it complies with GDPR and similar global privacy standards.
+</p>
+<h3>
+ 12. Kontakt
+</h3>
+<p>
+ <strong>
+  Utku Lehrer
+ </strong>
+ <br/>
+ 📧 Email:
+ <a href="mailto:utkulehrer@gmail.com">
+  utkulehrer@gmail.com
+ </a>
+ <br/>
+ 🌐 GitHub:
+ <a href="https://github.com/utkulehrer" target="_blank">
+  github.com/utkulehrer
+ </a>
+</p>
+<h3>
+ ✅ Zusammenfassung
+</h3>
+<ul>
+ <li>
+  🔐 Keine sensiblen personenbezogenen Daten werden gesammelt
+ </li>
+ <li>
+  🖥️ Vollständig offline nutzbar (außer Updates)
+ </li>
+ <li>
+  📄 Lokale Protokolle, nicht in der Cloud gespeichert
+ </li>
+ <li>
+  🚫 Kein Drittanbieterzugriff, keine Werbung, keine Cookies
+ </li>
+ <li>
+  🛠️ Google Drive access is
+  <strong>
+   read-only
+  </strong>
+  and limited to shared update packages
+ </li>
+</ul>
+<hr><br>
+<h1>Nutzungsbedingungen – Artilingo Academy Dictionary von Utku Lehrer</h1>
+<p><em>(Version 1.0 – 2025)</em><br><strong>Zuletzt aktualisiert:</strong> 12. Juli 2025</p>
+
+<h3>1. Zustimmung zu den Bedingungen</h3>
+<p>Durch die Nutzung der Anwendung Artilingo Academy Dictionary („die App“) stimmen Sie diesen Nutzungsbedingungen zu. Wenn Sie nicht einverstanden sind, verwenden Sie die App bitte nicht.</p>
+
+<h3>2. Lizenz und Zugriff</h3>
+<ul>
+<li>Die App wird lizenziert, nicht verkauft. Alle Rechte verbleiben beim Autor.</li>
+<li>Ein gültiger Lizenzcode ist erforderlich, um auf Admin- oder Schülerfunktionen zuzugreifen.</li>
+<li>Die App darf nicht weitergegeben, verkauft oder zurückentwickelt werden.</li>
+</ul>
+
+<h3>3. Offline-Nutzung</h3>
+<p>Die App ist vollständig offline nutzbar. Nach der Lizenzaktivierung ist keine Internetverbindung erforderlich (außer für optionale Updates).</p>
+
+<h3>4. Inhalte und Daten</h3>
+<ul>
+<li>Alle Vokabeldaten, Themen, Bilder und Audiodateien bleiben lokal gespeichert und werden nicht extern übertragen.</li>
+<li>Der Administrator kann Inhalte in der App hinzufügen, bearbeiten oder löschen.</li>
+<li>Es werden keine personenbezogenen Daten (z. B. Namen, E-Mails) erfasst oder geteilt.</li>
+</ul>
+
+<h3>5. Updates</h3>
+<p>Updates können gelegentlich über sichere Google-Drive-Links bereitgestellt werden. Updates sind optional und erfordern eine manuelle oder QR-basierte Installation.</p>
+
+<h3>6. Haftungsbeschränkung</h3>
+<p>Die App wird „wie sie ist“ bereitgestellt, ohne jegliche Gewährleistung. Der Autor übernimmt keine Haftung für Datenverlust, Lizenzmissbrauch oder andere Probleme.</p>
+
+<h3>7. Änderungen der Bedingungen</h3>
+<p>Diese Bedingungen können gelegentlich aktualisiert werden. Die fortgesetzte Nutzung der App gilt als Zustimmung zu den geänderten Bedingungen.</p>
+
+<h3>8. Kontakt</h3>
+<p>Bei Fragen oder Support:<br>
+📧 <a href="mailto:utkulehrer@gmail.com">utkulehrer@gmail.com</a><br>
+🌐 <a href="https://github.com/utkulehrer" target="_blank">github.com/utkulehrer</a></p>
+</section>
+    </div>
+</body>
+</html>
